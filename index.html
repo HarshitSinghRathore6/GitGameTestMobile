@@ -7,7 +7,7 @@
 </head>
 <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width="900" height="1600" tabindex="-1" style="width: 900px; height: 1600px; background: #231F20"></canvas>
-    <script src="Build/GitGameTest.loader.js"></script>
+    <script src="Build/GitGamTestMobile.loader.js"></script>
     <script>
         // Detect mobile devices and apply appropriate styles
         if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -27,9 +27,9 @@
         // Initialize Unity WebGL instance
         let gameInstance = null;
         createUnityInstance(document.querySelector("#unity-canvas"), {
-            dataUrl: "Build/GitGameTest.data",
-            frameworkUrl: "Build/GitGameTest.framework.js",
-            codeUrl: "Build/GitGameTest.wasm",
+            dataUrl: "Build/GitGamTestMobile.data",
+            frameworkUrl: "Build/GitGamTestMobile.framework.js",
+            codeUrl: "Build/GitGamTestMobile.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "expenses",
